@@ -93,11 +93,41 @@ margin-top: 50px;
 color: #172b4d;
 font-size: 60px;
 margin-left: 250px;
+justify-content: center;
   }
 
   .main p{
-    margin-top: 50px;
     color: #505050;
     font-size: 25px;
-    margin-left: 250px;
+float: right;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+        float: right;
+      }
+      
+
+      .grid-container > div {
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+      }
+
+      .div1 {
+        color: #172b4d;
+      }
+      
+      .div2 {
+        color: #172b4d;
+      }
+      
+      .div3 {
+        color: #172b4d;
+      }
+
+      .div4 {
+        color: #172b4d;
       }
