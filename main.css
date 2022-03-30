@@ -19,7 +19,7 @@
   .header {
     width: 100%;
     height: 100vh;
-    background: #ff0000;
+   /* background: #ff0000;*/
   }
   
   /*navigation bar*/
@@ -36,6 +36,25 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+   }
+
+   .heading span {
+     background: var(--orange);
+     color: #fff;
+     display: inline-block;
+     padding: .5rem 3rem;
+     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+   }
+
+   .btn {
+     margin-top: 1rem;
+     display: inline-block;
+     padding: .8rem 3rem;
+     font-size: 1.7rem;
+     border-radius: .5rem;
+     border: .2rem solid var(--black);
+     cursor: pointer;
+     background: none;
    }
 
    .heading h4 {
@@ -105,7 +124,7 @@ float: right;
       .grid-container {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        
+        margin-top: 100px;
         float: right;
       }
       
@@ -118,6 +137,7 @@ float: right;
 
       .div1 {
         color: #172b4d;
+  
       }
       
       .div2 {
@@ -131,3 +151,42 @@ float: right;
       .div4 {
         color: #172b4d;
       }
+.heading {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  color: var(--black);
+}
+     .features .box-container {
+       display: grid;
+       grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+       gap: 1.5rem;
+     }
+
+     .features .box-container .box {
+       padding: 3rem , 2rem;
+       background: #fff;
+       outline: var(--outline);
+       outline-offset: -1rem;
+       text-align: center;
+       box-shadow: var(--box-shadow);
+     }
+
+     .features .box-container .box img {
+       margin: 1rem 0;
+       height: 15rem;
+     }
+
+     .features .box-container .box h3 {
+       font-size: 2.5rem;
+       line-height: 1.8;
+       color: var(--black);
+     }
+
+     .features .box-container .box p {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      color: var(--light-color);
+      padding: 1rem 0;
+    }
